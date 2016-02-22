@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'Hobo';
+    src:url('../webfonts/Hobo.ttf.woff') format('woff'),
+        url('../webfonts/Hobo.ttf.svg#Hobo') format('svg'),
+        url('../webfonts/Hobo.ttf.eot'),
+        url('../webfonts/+Hobo.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+header{
+	text-align: center;
+	background: #fff;
+  	font-size: 18px;
+}
+
+.wild-title{
+	font-family: 'Hobo';
+	font-size: 64px;
+	color: #DE0000;
+}
+
+/* Main navigation
+------------------------- */
+
+ul{
+  	padding: 10px;
+  	margin: -5px 0 0 0;
+}
+
+li{
+  	display: inline;
+  	font-weight: bold;
+  	padding: 0px 24px 0px 24px;
+}
+
+a{ 
+ 	text-decoration: none;
+ 	color: #000;
+ 	transition: color .4s;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s; 
+}
+
+.actuel-page{
+	color: #3D9BE9;
+}
+
+a:hover{
+	color: #3D9BE9;
+} 
+
+/* Illustration part : Clowns bacground image;
+------------------------------------------------------ */
+
+.illustration{
+	background: url("../images/acrobats.jpg");
+	background-size: cover;
+	height: 232px;
+}
+
+/* Contact section
+--------------------------------------- */
+
+.sec-contact{
+	background: #000;
+}
+
+.contact {
+	background: #ECECEC;
+    max-width: 680px;
+    padding: 80px 130px 80px 130px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2A2A2A;
+    
+}
+
+.contact p{
+	font-size: 22px;
+	margin-bottom: 40px;
+}
+
+.contact ul, .contact li{
+	padding: 0;
+}
+
+input, textarea {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+    color: #2A2A2A;
+    margin: 10px 0 10px 0;
+}
+
+input[type="text"], input[type="email"] {
+	width: 97%;
+	height: 16px;
+	background: #3D9BE9;
+	border: 8px solid #3D9BE9;
+	border-radius: 10px;
+}
+
+textarea[id="message"] {
+	width: 97%;
+	height: 130px;
+	resize: none;
+	background: #3D9BE9;
+	border: 8px solid #3D9BE9;
+	border-radius: 10px;
+}
+
+input[type="submit"] {
+float: right;
+background: #000;
+border: 3px solid #000;
+border-radius: 5px;
+color: white;
+margin-right: 2px;
+}
+
+/* footer
+------------- */
+
+footer{
+
+	text-align: center;
+	background: #fff;
+  	color: #000;
+  	font-size: 14px;
+}
+
+/* footer nav
+-------------- */
+
+footer ul{
+  	padding: 36px;
+  	
+}
+
+footer li{
+  	display: inline;
+  	font-weight: normal;
+  	padding: 0px 18px 0px 18px;
+  	color: #727272;
+  	border-right: 1px solid #727272;
+}
+
+footer li:last-child{
+  	border-right: none;
+}
+
+footer a{
+
+ 	text-decoration: none;
+ 	color: #727272;
+} 
+
+/* Media Queries
+------------------- */
+
+/* for main navigation
+------------------------ */
+
+@media (max-width: 760px) {
+
+	header li {
+      display: block;
+      padding: 5px;
+    }
+}
+
+/* for logo/title, contact section, and footer
+------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+	.wild-title{
+	font-size: 34px;
+	}
+
+	.wild-title img{
+		width: 80px;
+	}
+
+	.contact{
+	padding: 10px 10px 80px 10px;
+	}
+
+	input[type="text"], input[type="email"], textarea[id="message"]{
+		width: 96%;
+	}
+
+	input[type="submit"]{
+		margin-right: 8px;
+	}
+
+	footer li{
+		display: block;
+		border-right: none;
+	}
+}
+
+/* for footer right border
+---------------------------- */
+
+@media (min-width: 769px) and (max-width: 1080px) {
+
+	footer li:last-child{
+      display: block;
+      padding: 5px;
+    }
+
+    footer li:nth-child(4){
+      border-right: none;
+    }
+}
+

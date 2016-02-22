@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'Hobo';
+    src:url('../webfonts/Hobo.ttf.woff') format('woff'),
+        url('../webfonts/Hobo.ttf.svg#Hobo') format('svg'),
+        url('../webfonts/Hobo.ttf.eot'),
+        url('../webfonts/+Hobo.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+header{
+	text-align: center;
+	background: #fff;
+  	font-size: 18px;
+}
+
+.wild-title{
+	font-family: 'Hobo';
+	font-size: 64px;
+	color: #DE0000;
+}
+
+/* Main navigation
+------------------------- */
+
+ul{
+  	padding: 10px;
+  	margin: -5px 0 0 0;
+}
+
+li{
+  	display: inline;
+  	font-weight: bold;
+  	padding: 0px 24px 0px 24px;
+}
+
+a{ 
+ 	text-decoration: none;
+ 	color: #000;
+ 	transition: color .4s;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s; 
+}
+
+a:hover{
+	color: #3D9BE9;
+}
+
+.selected{
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Performers part
+-------------------------- */
+
+.sec-performers{
+  text-align: center;
+  background: #242323;
+}
+
+.performers {
+    max-width: 600px;
+    padding: 20px 20px 20px 20px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #fff;
+}
+
+.performers p{
+  display: inline-block;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.performers img{
+  border: 4px solid #fff;
+  border-radius: 5px;
+}
+
+/* About performer
+--------------------------- */
+
+.sec-about-performer{
+  text-align: center;
+  background: #000;  
+}
+.about-performer{
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px 20px 40px 20px;
+  background: #ECECEC;
+  font-size: 18px;
+  color: #000; 
+}
+
+.about-performer h1{
+  font-size: 48px;
+}
+
+.about-performer p{
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 22px;
+}
+
+
+
+
+/* footer
+------------- */
+
+footer{
+  text-align: center;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+}
+
+/* footer nav
+-------------- */
+
+footer ul{
+    padding: 36px;
+    
+}
+
+footer li{
+    display: inline;
+    font-weight: normal;
+    padding: 0px 18px 0px 18px;
+    color: #727272;
+    border-right: 1px solid #727272;
+}
+
+footer li:last-child{
+    border-right: none;
+}
+
+footer a{
+
+  text-decoration: none;
+  color: #727272;
+}
+
+/* Media Queries
+------------------- */
+
+/* for main navigation
+------------------------ */
+
+@media (max-width: 760px) {
+
+  li {
+      display: block;
+      padding: 5px;
+    }
+}
+
+/* for logo/title, about section, performers section and footer
+------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+  .about-performer h1{
+  font-size: 28px;
+  }
+
+  .about-performer p{
+    font-size: 18px;
+  }
+
+  .img-size{
+  width: 100%;
+  }
+
+  .about-performer p{
+  width: 80%;
+  }
+
+  .wild-title{
+  font-size: 34px;
+  }
+
+  .wild-title img{
+    width: 80px;
+  }
+
+  .performers{
+  max-width: 300px;
+  }
+
+  footer li{
+    display: block;
+    border-right: none;
+  }
+}
+
+/* for about section and footer right border
+---------------------------- */
+
+@media (min-width: 769px) and (max-width: 1080px) {
+
+  .img-size{
+  width: 90%;
+  }
+
+  .about-performer p{
+  width: 90%;
+  }
+
+  footer li:last-child{
+    display: block;
+    padding: 5px;
+  }
+
+  footer li:nth-child(4){
+    border-right: none;
+  }
+} 

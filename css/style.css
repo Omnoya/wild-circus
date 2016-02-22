@@ -1,0 +1,249 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+header{
+	text-align: center;
+	background: #fff;
+  	font-size: 18px;
+}
+
+/* Main navigation
+------------------------- */
+
+ul{
+  	padding: 10px;
+  	margin: -5px 0 0 0;
+}
+
+li{
+  	display: inline;
+  	font-weight: bold;
+  	padding: 0px 24px 0px 24px;
+}
+
+a{ 
+ 	text-decoration: none;
+ 	color: #000;
+ 	transition: color .4s;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s; 
+}
+
+.actuel-page{
+	color: #3D9BE9;
+}
+
+a:hover{
+	color: #3D9BE9;
+} 
+
+/* Slogan part : a magic world with lions background;
+------------------------------------------------------ */
+
+.slogan{
+	background: url("../images/lions.jpg");
+	background-size: cover;
+}
+
+.slogan p{
+	margin: 0 auto;
+	max-width: 340px;
+	text-align: center;
+	color: #fff;
+	font-size: 52px;
+	padding: 50px 0 50px 0;
+	background: rgba(0,0,0,0.5);
+}
+
+/* center text for all section
+-------------------------------- */
+
+section{
+	text-align: center;
+}
+
+/* Intro part : 2hours pf great show
+--------------------------------------- */
+
+.sec-intro{
+	background: #000;
+}
+
+
+
+.intro {
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Performers part : program of the show and navigation to each performer's page
+-------------------------------------------------------------------------------- */
+
+.sec-program{
+	background: #242323;
+}
+
+.program {
+    max-width: 880px;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.program p{
+	margin: 40px 0 0 0;
+}
+
+nav{
+	max-width: 760px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+
+nav p{
+	font-size: 24px;
+	color: #fff;
+	  	
+  	background: linear-gradient(bottom, rgba(255,255,255,1), rgba(255,255,255,.4));
+  	background: -webkit-linear-gradient(bottom, rgba(255,255,255,1), rgba(255,255,255,.4));
+  	background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+
+  	padding: 10px;
+  	margin-top: 229px;
+
+  	transition: color .4s;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+}
+
+.clown, .illusion, .juggler, .trapez{
+	width: 278px;
+	height: 278px;
+	display: inline-block;
+	background-size: cover;
+	border: 20px solid #fff;
+	border-radius: 20px;
+	margin: 20px;
+}
+
+.clown:hover p, .illusion:hover p, .juggler:hover p, .trapez:hover p{
+	color: #3D9BE9;
+}	
+
+/* Background image for each performer square
+---------------------------------------------- */
+
+.clown{
+	background: url("../images/carreClown.jpg");
+}
+
+.illusion{
+	background: url("../images/carreIllusion.jpg");
+}
+
+.juggler{
+	background: url("../images/carreJuggler.jpg");
+}
+
+.trapez{
+	background: url("../images/carreTrapez.jpg");
+}
+
+/* footer
+------------- */
+
+footer{
+	text-align: center;
+	background: #fff;
+  	color: #000;
+  	font-size: 14px;
+}
+
+/* footer nav
+-------------- */
+
+footer ul{
+  	padding: 36px;
+  	
+}
+
+footer li{
+  	display: inline;
+  	font-weight: normal;
+  	padding: 0px 18px 0px 18px;
+  	color: #727272;
+  	border-right: 1px solid #727272;
+}
+
+footer li:last-child{
+  	border-right: none;
+}
+
+footer a{
+
+ 	text-decoration: none;
+ 	color: #727272;
+} 
+
+/* Media Queries
+------------------- */
+
+/* for main navigation
+------------------------ */
+
+@media (max-width: 860px) {
+
+	li {
+      display: block;
+      padding: 5px;
+    }
+}
+
+/* for performer's square and footer navigation
+------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+	.clown, .illusion, .juggler, .trapez{
+		display: block;
+		width:236px;
+		height:236px;
+		margin: 20px auto;
+	}
+
+	nav p{
+		font-size: 18px;
+		padding: 7px;
+  		margin-top: 200px;
+	}
+
+	footer li{
+		display: block;
+		border-right: none;
+	}
+}
+
+/* for footer right border
+---------------------------- */
+
+@media (min-width: 769px) and (max-width: 1080px) {
+
+	footer li:last-child{
+      display: block;
+      padding: 5px;
+    }
+
+    footer li:nth-child(4){
+      border-right: none;
+    }
+}
+
